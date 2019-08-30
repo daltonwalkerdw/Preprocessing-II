@@ -1,1 +1,28 @@
 // Mixins in here
+.flex-mixin(@direction: row;){
+    display:flex;
+    flex-direction: @direction;
+}
+
+.line(){
+    border-bottom: .2rem dashed @silver;
+}
+
+.button(@background-color, @color){
+    display: flex;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #17A2B8;
+    border-radius: 1.7rem;
+    color: #FFEBCD;
+    font-size: 2rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.input-form-mixin(@width, @height){
+    width: @width;
+    height: @height;
+    background-color: @sandy-beach;
+    margin-bottom: 1.5rem;
+}
